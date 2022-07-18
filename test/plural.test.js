@@ -70,6 +70,7 @@ describe('short', () => {
         [3, 'задачі'],
         [-3, 'задачі'],
         [0, 'задач'],
+        [11, 'задач'],
     ]
     testCases.forEach(c => {
         it('should work for ' + c[0], function () {
