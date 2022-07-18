@@ -1,7 +1,14 @@
 export function plural(count, one, few, many) {
     const prefix = count + " ";
-    if (count >= 5 || count === 0) {
+    count = Math.abs(count)
+    if (count % 10 === 1) {
+        return prefix + one
+    }
+    if (count > 9 && count < 21) {
         return prefix + many
     }
-    return prefix + (count === 1 ? one : few)
+    if (count % 10 > 1 && count % 10 < 5) {
+        return prefix + few
+    }
+    return prefix + many
 }
