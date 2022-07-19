@@ -1,5 +1,5 @@
 import * as assert from "assert";
-import {removeDuplicates} from "../removeDuplicates.js";
+import {removeDuplicates} from "../tasks/removeDuplicates.js";
 
 describe ('removeDuplicates', ()=>{
     it('should ', function () {

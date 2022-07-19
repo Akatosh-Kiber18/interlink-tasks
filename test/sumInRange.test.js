@@ -1,5 +1,5 @@
 import * as assert from "assert";
-import {sumInRange} from "../sumInRange.js";
+import {sumInRange} from "../tasks/sumInRange.js";
 
 describe('Plural function', () => {
     it('should work from 1 to 3', () => {

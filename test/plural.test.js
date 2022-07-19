@@ -1,5 +1,5 @@
 import * as assert from "assert";
-import {plural} from '../plural.js'
+import {plural} from '../tasks/plural.js'
 
 describe('Plural function', () => {
     it('should work for 1', () => {

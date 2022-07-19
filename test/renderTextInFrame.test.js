@@ -1,5 +1,5 @@
 import * as assert from "assert";
-import {renderTextInFrame} from '.././renderTextInFrame.js'
+import {renderTextInFrame} from '../tasks/renderTextInFrame.js'
 
 describe('Plural function', () => {
     it('should work for: Hello world', () => {

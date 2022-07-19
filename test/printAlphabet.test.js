@@ -1,5 +1,5 @@
 import * as assert from "assert";
-import {printAlphabet} from "../printAlphabet.js";
+import {printAlphabet} from "../tasks/printAlphabet.js";
 
 describe("Alphabet checking" ,() => {
     it('should return Alphabet with numbers of later`s', () => {

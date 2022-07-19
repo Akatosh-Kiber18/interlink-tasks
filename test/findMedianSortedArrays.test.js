@@ -1,5 +1,5 @@
 import * as assert from "assert";
-import {findMedianSortedArrays} from "../findMedianSortedArrays.js";
+import {findMedianSortedArrays} from "../tasks/findMedianSortedArrays.js";
 
 describe("Find Median Sorted Arrays", () =>{
     it("For [1,3] , [2]", () => {
