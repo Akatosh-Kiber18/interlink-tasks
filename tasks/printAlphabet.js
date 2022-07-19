@@ -17,4 +17,4 @@ function printAlphabet(cols) {
     console.log(result);
 }
 
-printAlphabet(2)
+printAlphabet(4)
