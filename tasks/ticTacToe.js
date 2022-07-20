@@ -1,34 +1,20 @@
 export function renderField(field) {
-    const cleanCell = "   ";
-    const xCell = " x ";
-    const oCell = " 0 "
-    let gameField = ""
-    let splitLine = "\n---+---+---\n"
+    const emptyCell = "   ";
+    const x = " x ";
+    const o = " 0 ";
+    const splitLine = "\n---+---+---\n";
 
-    for (let i = 0; i < 9; i++) {
-        if (field[i] === 0) {
-            if (i === 2|| i === 5 || i === 8) {
-                gameField += cleanCell
-            } else {
-                gameField += cleanCell + "|"
+   let finalField = field.map((c,i)=> {
+            if(c===0) {
+                return i!==2 && i !==5 && i !==8 ? emptyCell + "|" : emptyCell
             }
-        } else if (field[i] === 1) {
-            if (i === 2|| i === 5 || i === 8) {
-                gameField += xCell
-            } else {
-                gameField += xCell + "|"
+            if (c===1) {
+                return i!==2 && i !==5 && i !==8 ? x + "|" : x
             }
-        } else if (field[i] === -1) {
-            if (i === 2|| i === 5 || i === 8) {
-                gameField += oCell
-            } else {
-                gameField += oCell + "|"
+            if (c===2) {
+                return i!==2 && i !==5 && i !==8 ? o + "|" :  o
             }
-        }
-        if (i===2||i===5) {
-            gameField += splitLine
-        }
-    }
+    })
 
-    return gameField
+    return finalField.join("")
 }
