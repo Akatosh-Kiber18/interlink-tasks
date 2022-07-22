@@ -51,7 +51,7 @@ describe('Field Render', () => {
         ]
     ]
     testsArr.forEach(t => {
-        it('clear field', () => {
+        it('field testing', () => {
             assert.equal(renderField(t[0]), t[1])
         });
     })

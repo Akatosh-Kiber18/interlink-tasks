@@ -76,8 +76,8 @@ const splitLine = "\n---+---+---\n";
 export function renderField(field) {
     const board = convertTo2D(field);
     let result = [];
-    for (let i = 0; i < boardSize; i++) {
-        for (let j = 0; j < boardSize; j++) {
+    for (let i = 0; i < board.length; i++) {
+        for (let j = 0; j < board.length; j++) {
             result.push(" ");
             if (board[i][j] === 0) {
                 result.push(" ");
